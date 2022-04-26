@@ -99,6 +99,7 @@ if($total == 0){redirect(SITE_HOME."index.php");}
     ============================================ -->
         <link rel="stylesheet" href="css/responsive.css">
 		<!-- modernizr JS
+    
 		============================================ -->		
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
 		<meta name="google-site-verification" content="IWt4nuWLSjtEx7ZaOZY6siH36wknmKBLdyXbQSe3dT0" />
