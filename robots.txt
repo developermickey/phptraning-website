@@ -1,0 +1,3 @@
+User-Agent: *
+Disallow:
+Sitemap: https://www.nviron.in/sitemap.xml

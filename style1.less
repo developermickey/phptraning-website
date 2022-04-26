@@ -1,0 +1,2397 @@
+
+*--------------------------------------------
+
+    Template Name: Miakolegal | Responsive HTML5 Template
+    Template URI: https://radiustheme.com/
+    Description: Miakolegal | Responsive HTML5 Template which is used for Lawyer.
+    Author: Radius Theme
+    Author URI: https://radiustheme.com/
+    Version: 1.0
+
+----------------------------------------------
+    
+    CSS INDEX
+    ===================
+	
+    1. Theme Default CSS (body, link color, section etc)
+    2.Header Area Start
+      2.1 Header Top Area Start
+      2.2 Main Header Area Start 
+    3.Slider Area Styling 
+    4.Slider Buttom Area Styling
+    5.About Lawyer Area Stying 
+    6.Our Practice Area Styling 
+    7.Advertise Area Styling
+    8.Happy Client Area Styling
+    9.Our Attorney Area Styling
+    10.Latest News Area Stying
+    11.Partner Logo Area Styling
+    12.Get Free Consultation Styling
+    13.Footer Area Stying
+      13.1 Footer Bottom Area Styling
+    14. Home Two Experience Section Styling
+    15. Make Appointemnt Section Styling
+    16. Home Three Styling
+      16.1 Header Area Start
+      16.2 Testimonial Area Start Styling
+    17. Home Four Styling
+      17.1 Home Four Header area styling 
+      17.2 Lawer Expert Area styling
+      17.3 Home Four Practices Area Stying
+    18. About Us Page Styling
+      18.1 Banner Area Stying
+      18.2 About Page Lawyer Section Area Stying
+    19. Awards Page Area Stying
+    20.Practice Area Stying
+    21. Blog Page Stying
+    22.Single Blog Page Styling
+    23.Conatct Page Styling
+    24.404 Page Styling
+--------------------------------------------*/
+
+/*----------------------------------------*/
+/*  1.  Theme default CSS
+/*----------------------------------------*/
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800);
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,300,500,600,700,800);
+@import url(https://fonts.googleapis.com/css?family=Droid+Sans:400,700);
+/*-------------------------------------
+ Base Color 
+ --------------------------------------*/
+@primary-color:#cf9455;
+@secondary-color:#797979;
+/*-------------------------------------
+ Font family 
+ --------------------------------------*/
+@body-font:'Open Sans', sans-serif;
+@heading-font:'Raleway', sans-serif;
+@menu-font:'Droid Sans', sans-serif;
+
+html, body {height: 100%;}
+.floatleft {float:left}
+.floatright {float:right}
+.alignleft {float:left;margin-right:15px;margin-bottom: 15px}
+.alignright {float:right;margin-left:15px;margin-bottom: 15px}
+.aligncenter {display:block;margin:0 auto 15px}
+a:focus {outline:0px solid}
+img {max-width:100%;height:auto}
+.fix {overflow:hidden}
+p {margin:0 0 15px;}
+h1, h2, h3, h4, h5, h6 {
+  margin: 0 0 10px;
+  font-family: @heading-font;
+}
+a {transition: all 0.3s ease 0s;text-decoration:none;}
+a:hover {
+  color: @primary-color;
+  text-decoration: none;
+}
+a:active, a:hover {
+  outline: 0 none;
+}
+ul{
+list-style: outside none none;
+margin: 0;
+padding: 0
+}
+.clear{clear:both}
+body {
+  font-family:@body-font;
+  font-size: 14px;
+  line-height: 22px;
+  color: #797979;
+}
+.acurate{
+  margin: 0;
+  padding: 0;
+}
+.section-title-area{
+  position: relative;
+  text-align: center;
+  h2{
+    font-size: 36px;
+    color: #000000;
+    font-weight: 700;
+    text-transform: uppercase;
+    &::after{      
+      background: @primary-color;
+      content: "";
+      display: block;
+      left: 0;
+      top: 0;
+      right: 0;
+      width: 70px;
+      height: 3px;
+      margin: 20px auto;
+    }
+  }
+  p{
+    padding:0 100px;
+  }
+}
+.load-more{
+  /*  display: inline-block;
+   position: relative; */
+   text-align: center;
+  a{
+    background: rgb(0, 0, 0) none repeat scroll 0 0;
+    color: rgb(255, 255, 255);
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 80px;
+    padding: 15px 40px;
+    text-decoration: none;
+    transition: all 0.3s ease 0s;
+    position: relative;
+    &:after {
+    color: rgb(255, 255, 255);
+    content: "";
+    display: block;
+    font-family: FontAwesome;
+    font-size: 20px;
+    position: absolute;
+    right: 10px;
+    top: 18px;
+    }
+    &:hover{
+        background: rgb(207, 148, 85) none repeat scroll 0 0;
+    }
+  }
+}
+/*-------------------------------------
+ 2.Header Area Start 
+ --------------------------------------*/
+
+/*-------------------------------------
+2.1 Header Top Area Start 
+---------------------------------------*/
+ .header-area-top-area{
+  background: #000000;
+  padding: 6px 0;
+  .header-top-left{
+    p{
+      color: #999da7;
+      margin: 0;
+      @media (min-width: 768px) and (max-width: 991px) {
+        font-size: 12px;
+      }
+      @media (min-width: 320px) and (max-width: 767px) {
+        text-align: center;
+      }
+      i{
+        color: @primary-color;
+        margin-right: 5px;
+      }
+    }
+  }
+  .header-top-right{
+    float: right;    
+      @media (min-width: 320px) and (max-width: 767px) {
+        float: none;
+        text-align: center;
+      }
+    ul{
+      li{
+        border-right: 1px solid @primary-color;
+        display: inline-block;
+        line-height: 15px;
+        &:last-child{
+          border: none;
+        }          
+        a{
+          display: block;
+          color: #999da7;
+          padding: 0 15px;
+          transition:all .3s;
+          &:hover{
+            color: @primary-color;
+          }         
+        }      
+      }
+    }    
+  }
+ }
+/*-------------------------------------
+2.2 Main Header Area Start 
+---------------------------------------*/
+.main-header-area{
+  padding: 0px 0 0;
+  .logo-area{
+    padding-top: 10px;
+  }
+  .main-menu-area{
+     padding: 0px 0;
+   nav > ul{
+      > li{
+          display: inline-block;
+          line-height: 15px;
+          position: relative;
+          padding: 48px 0;
+          &.current{
+            i.fa{
+              color: @primary-color;
+              font-size: 25px;              
+            }
+          }
+          &:first-child{          
+              a{
+                border: none; 
+              }          
+          } 
+          a{
+            display: block;
+            color: #999da7;
+            padding: 0 20px;
+            transition:all .3s;
+            font-family: @menu-font;
+            text-transform: uppercase;
+            text-decoration: none;            
+            border-left: 1px solid @primary-color;
+            &:hover{
+              color: @primary-color;
+            }  
+
+          }
+          ul{
+              left: 0;
+              opacity: 0;
+              position: absolute;
+              top: 100%;
+              transform: scaleY(0);
+              transform-origin: 0 0 0;
+              transition: all 0.5s ease 0s;
+              width: 200px;
+              z-index: 99999;
+              background: @primary-color;
+              padding: 0 10px;
+          }
+          &:hover ul{
+                opacity: 1;
+                transform: scaleY(1);
+                li{
+                display: block;
+                border-bottom: 1px solid #ffffff;
+                border-left: none;
+                &:last-child{
+                  border-bottom: none
+                }
+                a{
+                  padding: 10px 0;
+                  display: block;
+                  color: #ffffff;
+                  text-transform: inherit;
+                  font-size: 14px;
+                  &:hover{
+                    color: @secondary-color;
+                    padding: 10px 0;
+                  }
+                }
+              }
+          }     
+      }      
+    }
+  }
+  .search-area{
+    padding: 45px 0;
+    position: relative;
+    span{
+      position: absolute;
+      left: 10px;
+      top: 53px;
+      line-height: 0px;
+      color: @primary-color; 
+    }
+    input{
+        background: rgb(255, 255, 255) none repeat scroll 0 0;
+        border: 1px solid rgb(207, 207, 207);
+        border-radius: 15px;
+        padding: 5px 18px 5px 25px;
+        width: 100%;      
+        -webkit-box-shadow: 0 0 0.5px -1.5px rgba(153, 157, 163, .4);
+        -moz-box-shadow: 0 0 0.5px -1.5px rgba(153, 157, 163, .4);
+        box-shadow: 0 0 0.5px -1.5px rgba(153, 157, 163, .4);
+    }
+
+  }
+}
+
+/*-------------------------------------
+3.Slider Area Styling  
+---------------------------------------*/
+.slider-area{
+  .tp-caption.NotGeneric-SubTitle, .NotGeneric-SubTitle{
+    
+  }
+  .big-title {
+  color: rgb(255, 255, 255);
+  font-size: 72px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
+    span.title-builder {
+    color: @primary-color;
+    }
+  }
+  .small-content {
+    padding: 40px 300px;
+    text-align: center;
+  }
+  .button {
+    color: rgb(209, 209, 209);
+    left: 0;
+    margin: auto;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 60%;
+    white-space: normal;
+    .btn-success {
+          background-color: @primary-color;;
+          border-color:  @primary-color;
+          font-size: 15px;
+          font-weight: 600;
+          padding: 15px 35px;
+          text-transform: uppercase;
+          border-radius: 0;
+          &:hover{
+              background-color:@secondary-color;
+              border-color:@secondary-color;
+              color: rgb(255, 255, 255);
+          }
+      }
+  }
+  .preview-2 .nivo-controlNav {
+   display: none;
+  }
+}
+/*-------------------------------------
+4.Slider Buttom Area Styling 
+---------------------------------------*/
+.slider-buttom-area{
+  overflow: hidden;
+  .single-slider-buttom-area{
+    height: 350px;
+    &:hover{
+    .slider-buttom-overlay{         
+              opacity: 1;
+              transform: scaleY(1);      
+     }
+
+     }
+    padding: 85px 0 25px 0;
+    .content-area{
+      position: relative;
+    } 
+    h2 {
+        a{
+          color: #ffffff;
+          text-decoration: none;
+          z-index: 9;
+          font-size: 30px;
+          font-family: @heading-font;
+          font-weight: 600;
+          &:hover{
+            color: @primary-color;
+          }
+        }
+      }
+      p{
+        color: #dddddd;
+      }
+    a{
+      &.call-us-buttom{
+          background: rgb(255, 255, 255) none repeat scroll 0 0;
+          display: inline-block;
+          margin-top: 20px;
+          padding: 15px 75px;
+          color: #000000;
+          position: relative;
+          transition: all .3s;
+          font-weight: 600;
+          &::after{
+          color:@primary-color;
+          content: "\f178";
+          display: block;
+          font-family: FontAwesome;
+          font-size: 20px;
+          position: absolute;
+          right: 39px;
+          top: 17px;
+        }
+        &:hover{
+          background:@primary-color;
+         &::after{
+          color:#ffffff;
+        } 
+        }
+      }
+    }
+    .slider-buttom-overlay1{
+      background: rgba(0,0,0,.5);
+      height: 100%;
+      left: 0;
+      opacity: 0;
+      position: absolute;
+      top:0;
+      transform: scaleY(0);
+      transition: all 0.5s ease 0s;
+      width: 100%; 
+     } 
+  }
+  .slider-button-one{
+    background: url(img/slider-buttom1.jpg) no-repeat;
+    background-position: center center;
+    background-size: cover;
+    text-align: right;
+    padding-right: 20px;
+     padding-bottom: 67px;
+     h3{
+        color:@primary-color;
+        font-size: 27px;
+     }
+    .call-us-buttom {
+      padding: 15px 60px !important;
+      &:after{
+            font-size: 15px !important;
+            right: 11px !important;
+      }
+    }
+  }
+  .slider-button-two{
+    background: url(img/slider-buttom2.jpg) no-repeat;
+    background-position: center center;
+    background-size: cover;
+    padding: 82px 20px 67px;
+    .call-us-buttom {
+      padding: 15px 30px !important;
+      &:after{
+            font-size: 15px !important;
+            right: 11px !important;
+      }
+    }
+ 
+  }
+  .slider-button-three {
+    background: url(img/slider-buttom3.jpg) no-repeat;
+    background-position: center center;
+    background-size: cover;
+    text-align: left;
+    padding:84px 0 105px 20px;
+   ul li{
+    padding: 7.2px 0;
+    color: @secondary-color;
+     &::after{       
+        background:@secondary-color;
+        content: "";
+        display: block;
+        left: 0;
+        top: 0;
+        width: 400px;
+        height: 1px;       
+        }
+    span{
+      margin-left: 150px;
+    }
+   } 
+  }
+}
+/*-------------------------------------
+5.About Lawyer Area Stying 
+---------------------------------------*/
+.about-lawyer-area{
+  background: #F9F9F9;
+  padding: 100px 0 0 0;
+  .about-lawyer-featured-image img:hover{
+    opacity: .9;
+  }
+  .about-content-area{
+    margin: 70px 0;
+    h2{
+      color: #000000;
+      font-size: 60px;
+      margin:0;
+      padding:0;
+      font-weight:900;
+      span{
+        color: @primary-color;
+        font-family: @heading-font;
+      }
+    }
+    p{
+      margin: 10px 0;
+    }
+    ul li{
+      padding: 10px 0;
+      font-size: 18px;
+      color: #000000;
+      font-weight: 600;
+      &::before{        
+        content: "\f00c";
+        padding:5px;
+        left: 0;
+        top: 0;      
+        font-family: FontAwesome;
+        color: @primary-color;
+  
+      }
+    }
+    .read-more-button{
+      position: relative;
+      display: inline-block;
+     a{
+      background: rgb(0, 0, 0) none repeat scroll 0 0;
+      color: rgb(255, 255, 255);
+      display: inline-block;
+      font-size: 14px;
+      font-weight: 600;
+      margin-top: 30px;
+      padding: 15px 40px;
+      transition: all 0.3s ease 0s;
+      text-decoration: none;
+      &:hover{
+        background: @primary-color;
+      }
+      &::after{
+          color: rgb(255, 255, 255);
+          content: "";
+          display: block;
+          font-family: FontAwesome;
+          font-size: 14px;
+          position: absolute;
+          right: 18px;
+          top: 48px;
+
+      }
+    }
+  }
+}
+}
+/*-------------------------------------
+6.Our Practice Area Styling 
+---------------------------------------*/
+.our-practice-area{
+  padding: 90px 0 0 0;
+  overflow: hidden;
+  .practice-area{
+    background: #F9F9F9;
+    padding:0px 0 0px 0;
+    margin: 20px 0 100px;
+    .owl-carousel{
+       .owl-wrapper-outer{
+        overflow: inherit;
+       }
+    }
+   
+    &:hover{
+      .owl-prev{
+        opacity: 1 !important;
+      }
+      .owl-next{
+        opacity: 1 !important;
+      }
+    }
+    .single-practice{
+    border: 1px solid rgb(255, 255, 255);
+    padding: 30px 10px;
+    text-align: center;
+    transition: all 0.3s ease-out 0s;
+    position: relative;
+    z-index: 999;
+    top: 0;
+    display: block;
+    &:after{
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      left: 0;
+      top: 0;
+      opacity: 0;
+      visibility: hidden;
+      content: "";
+      z-index: 1;
+      -webkit-box-shadow:0 0 3px 0 rgba(0, 0, 0, 0.75);
+      -moz-box-shadow:0 0 3px 0 rgba(0, 0, 0, 0.75);
+      box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.75);
+      transition: all 0.3s ease-out 0s;
+    }
+      &:hover{         
+          &:after{          
+            opacity: 1;     
+            visibility:visible;     
+          }
+       
+      }
+      i{
+        color: @primary-color;
+        font-size: 40px;
+      }
+      h2{
+        a{
+          color: rgb(0, 0, 0);
+          display: block;
+          font-family: "Raleway",sans-serif;
+          font-size: 24px;
+          font-weight: 700;
+          margin: 15px 0;
+          text-decoration: none;
+          &:hover{
+            color: @primary-color;
+          }
+          &::after{                
+              background: @primary-color;
+              content: "";
+              display: block;
+              left: 0;
+              top: 0;
+              right: 0;
+              width: 70px;
+              height: 3px;
+              margin: 20px auto;
+          }
+        }
+      }
+      p{
+        margin: 20px 0;
+      }
+      .read-more{
+        display: inline-block;
+        margin: 10px 0;
+        a{
+          color: @primary-color;
+          transition: all .3s;
+          text-decoration: none;
+          text-transform: uppercase;
+          display: block;
+          padding:10px 20px;
+          border: 1px solid @secondary-color;
+          &:hover{
+            background:  @primary-color;
+            color: #ffffff;
+            border: 1px solid   @primary-color;
+          }
+        }
+      }
+      .single-practice-content{
+        z-index:3;
+        position: relative;
+      }
+    }
+    .owl-prev{
+      position: absolute;
+      left: 0;
+      top: 0;
+      background: @secondary-color;
+      transition: all 0.3s ease-out 0s;
+      border: 1px solid #777777;
+      top: 170px;
+      width: 60px;
+      height: 60px;
+       border-radius: 0px !important;
+       z-index: 99;
+       opacity: 0 !important;
+       i{
+        line-height: 50px;
+        font-weight: 700;
+        font-size: 25px;
+       }
+      &:hover{
+        background: #000000 !important;
+      }
+    }
+    .owl-next{
+      position: absolute;
+      right: 0;
+      top: 0;
+      background: @secondary-color;
+      transition: all 0.3s ease-out 0s;
+      border: 1px solid #777777;
+      top: 170px;
+      width: 60px;
+      height: 60px;
+       border-radius: 0px !important;
+       z-index: 99;
+       opacity: 0 !important;
+       i{
+        line-height: 50px;
+        font-weight: 700;
+        font-size: 25px;
+       }
+      &:hover{
+        background: #000000 !important;
+      }
+    }
+  }
+}
+/*-------------------------------------
+7.Advertise Area Styling 
+---------------------------------------*/
+.advertise-area{
+    background: url(img/bennar.jpg) no-repeat;
+    background-position: center center;
+    background-size: cover;
+    padding:140px;
+    transition: all 0.3s ease-out 0s;
+    overflow: hidden;
+    &:hover{
+      opacity: .9;
+    }
+    .bennar{
+      h2{
+        font-size: 50px;
+        font-weight: 700;
+        color: #ffffff;
+        text-transform: uppercase;
+        text-align: center;
+        span{
+          color: @primary-color;
+        }
+      }
+    }
+}
+/*-------------------------------------
+8.Happy Client Area Styling 
+---------------------------------------*/
+.happy-client-area{
+  position: relative;
+  padding:100px 0;
+  background: #f9f9f9;
+  overflow: hidden;
+  .single-client-area{
+    text-align: center;
+    background: #ffffff;
+    padding:47px 0;
+    margin: 15px;
+    transition: all 0.3s ease-out 0s;
+    h2{
+      a{
+        color: @primary-color;
+        text-decoration: none;
+        font-size: 24px;
+
+      }
+    }
+    .picture{
+      width: 120px;
+      height: 120px;
+      margin: 20px auto;
+      display: block;
+      img{
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        border-radius: 50%;
+      }
+      ul{
+          margin: 15px 0;
+
+        li{
+          display: inline-block;
+          a{
+            display: block;
+            padding:5px 1px;
+            i{
+              color: @primary-color;
+            }
+
+          }
+        &.disable{
+          a{
+
+            i{
+              color:#cdcdcd;
+            }
+          }
+        }
+        }
+      }
+    }
+    p{
+      margin: 50px 10px;
+    }
+    &:hover{
+        -webkit-box-shadow: -1px 1px 11px 1px rgba(0,0,0,0.75);
+        -moz-box-shadow: -1px 1px 11px 1px rgba(0,0,0,0.75);
+        box-shadow: -1px 1px 11px 1px rgba(0,0,0,0.75);
+    }
+  }
+  .client-section-area{
+        .owl-prev{
+        position: absolute;
+        left: -50px;
+        top: 0;
+        background: transparent !important;       
+        transition: all .3s;
+        border: 1px solid #777777;
+        top: 170px;
+        width: 60px;
+        height: 60px;
+         border-radius: 0px !important;
+         z-index: 99;
+         i{
+          line-height: 50px;
+          font-weight: 700;
+          font-size: 25px;
+          color: @primary-color;
+         }
+        &:hover{
+          background: #000000 !important;
+        }    
+      }
+    }
+    .owl-next{
+    position: absolute;
+    right: -50px;
+    top: 0;
+    background: transparent !important;
+    color: @primary-color;
+    transition: all 0.3s ease-out 0s;
+    border: 1px solid #777777;
+    top: 170px;
+    width: 60px;
+    height: 60px;
+     border-radius: 0px !important;
+     z-index: 99;
+     i{
+      line-height: 50px;
+      font-weight: 700;
+      font-size: 25px;
+      color: @primary-color;
+     }
+    &:hover{
+      background: #000000 !important;
+    }
+  }
+}
+/*-------------------------------------
+9.Our Attorney Area Styling 
+---------------------------------------*/
+.our-attorney-area{
+  padding:100px 0;
+  .our-attorney{
+    margin-top: 20px;
+    .single-attorney{
+      margin: 0 15px;
+      .attorney-picture{
+         position: relative;
+         img{
+          width: 100%;
+         }
+        .overlay{
+          height: 100%;
+          width: 100%;
+          position: absolute;
+          top: 0;
+          opacity: 0;
+          z-index: 2;
+          transform: scale(1);
+          transition: all 0.3s ease-out 0s;
+          z-index: 9;
+          background:rgba(255,255,255,.8);
+          text-align: center;
+          h2{
+            margin:189px 0 0 0;
+
+            a{
+              border: 1px solid rgb(0, 0, 0);
+              color: rgb(0, 0, 0);
+              font-size: 14px;
+              font-weight: normal;
+              padding: 20px 90px;
+              text-transform: uppercase;
+              transition: all 0.3s ease-out 0s;
+              font-family: @menu-font;
+
+              &:hover{
+                color: @primary-color;
+                border: 1px solid @primary-color;
+              }
+            }
+          }
+          .social-media{
+            bottom: 50px;
+            left: 0;
+            position: absolute;
+            right: 0;          
+            ul{
+              li{
+                 display: inline-block;
+                margin: 1px;
+                border: 1px solid  #000000;
+                transition: all 0.3s ease-out 0s;
+                &:hover{
+                   border: 1px solid @primary-color;  
+                }             
+                a{               
+                color: rgb(0, 0, 0);
+                display: block;
+                height: 40px;
+                padding: 9px 0;
+                transition: all 0.3s ease-out 0s;
+                width: 42px;
+                &:hover{
+                    color: @primary-color;                   
+                }
+                  i{ 
+                    transition: all 0.3s ease-out 0s;
+                    font-size: 20px;                  
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      &:hover .overlay{
+      opacity: 1;
+      transform: scale(.9);
+      }
+    }
+    .attorney-content{
+    margin: 20px 0;  
+    h2{
+      margin: 0;
+      a{
+        color: rgb(207, 148, 85);
+        font-family: "Raleway",sans-serif;
+        font-size: 24px;
+        font-weight: 600;
+        z-index: 2;
+        transition: all 0.3s ease-out 0s;
+        &:hover{
+          color: @secondary-color;
+        }
+      }
+    }
+    }
+  }
+}
+/*-------------------------------------
+10.Latest News Area Stying 
+---------------------------------------*/
+.latest-news-area{
+  background: #f9f9f9;
+  padding:100px 0;
+  .single-news-area{
+    &:hover{
+       .news-featured-image{
+        &:after{
+          opacity: 0;
+          transform:scaleY(0);
+          }
+       }
+    }
+    margin: 20px 0 0 0;
+    .news-featured-image{
+      position: relative;
+      &:after{
+          background: rgba(207,148,85,.5);
+          transform-origin: 0 1 0;
+          transform:scaleY(0);
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;          
+          transition: all 0.3s ease-out 0s;
+          opacity: 0;
+          display: block;
+           content: "";
+          z-index: 99;
+      }
+      img{
+        transition: all 0.3s ease-out 0s;      
+      }
+      ul{
+        li{
+          float: left;
+          margin-right: 10px;
+          &.active{
+            background: @primary-color;
+            a{
+              color: #ffffff;
+            }
+          }
+          a{
+            display: block;
+            padding:10px 20px;
+            text-decoration: none;
+            text-align: center;
+            color: @secondary-color;
+             transition: all 0.3s ease-out 0s;
+            &:hover{
+               color: #000000;      
+            }
+            i{
+              color: @primary-color;             
+            }
+          }
+        }
+      }
+    }
+    h3{
+      margin:0;
+      line-height: inherit; 
+      a{
+        color: rgb(0, 0, 0);
+        display: block;
+        font-size: 20px;
+        font-weight: 700;
+        padding: 60px 0 0;
+        text-decoration: none;
+        transition: all 0.3s ease-out 0s;
+        &:hover{
+           color: @primary-color;       
+        }
+      }
+    }
+    p{
+      font-size: 14px;
+      color: @secondary-color;
+      margin: 20px 0;
+    }
+
+  }
+}
+/*-------------------------------------
+11.Partner Logo Area Styling 
+---------------------------------------*/
+.client-logo-area{
+  border-top: 1px solid rgb(229, 229, 229);
+  overflow: hidden;
+  padding: 100px 0;
+  overflow: hidden;
+        .owl-prev{
+        position: absolute;
+        left: -50px;
+        top: 0;
+        background: transparent !important;       
+        transition: all .3s;
+        border: 1px solid #777777;
+        top: 15px;
+        width: 30px;
+        height: 30px;
+         border-radius: 0px !important;
+         z-index: 99;
+         i{
+          line-height: 20px;
+          font-weight: 700;
+          font-size: 25px;
+          color: @primary-color;
+         }
+        &:hover{
+          background: #000000 !important;
+        }    
+      }
+    .owl-next{
+    position: absolute;
+    right: -50px;
+    top: 0;
+    background: transparent !important;
+    color: @primary-color;
+    transition: all .3s;
+    border: 1px solid #777777;
+    top: 15px;
+    width: 30px;
+    height: 30px;
+     border-radius: 0px !important;
+     z-index: 99;
+     i{
+      line-height: 20px;
+      font-weight: 700;
+      font-size: 25px;
+      color: @primary-color;
+     }
+    &:hover{
+      background: #000000 !important;
+    }
+  }
+}
+/*-------------------------------------
+12.Get Free Consultation Styling 
+---------------------------------------*/
+.get-free-consultation-area{
+  background: @primary-color;
+  padding:40px 0;
+  h2{
+    color: #ffffff;
+  }
+  .contact-buttom{
+    margin-top: 10px;
+    a{
+      color: #ffffff;
+      padding:15px 25px;
+      text-decoration: none;
+      text-align: center;
+      text-transform: uppercase;
+      font-size: 14px;
+      border:1px solid #ffffff;
+      font-weight: 600;
+      transition: all 0.3s ease 0s;
+      &:hover{
+        color: @primary-color; 
+        background: #ffffff;
+      }
+    }
+  }
+}
+/*-------------------------------------
+13.Footer Area Stying 
+---------------------------------------*/
+.footer-top-area{
+  background: #000000;
+  padding: 100px 0;
+  color: #ffffff;
+  .footer{
+    h2{
+      text-transform: uppercase;
+      color: #ffffff;
+      font-size: 20px;
+      font-weight: 600;
+      &:after{
+        background: rgb(207, 148, 85) none repeat scroll 0 0;
+        content: "";
+        display: block;
+        height: 2px;
+        left: 0;
+        right: 0;
+        top: 0;
+        width: 50px;
+        margin: 21px 0;
+      }
+    }
+  }
+  .footer-one{
+    p{
+      color: @secondary-color;
+    }
+   .social-media{
+    margin-top: 20px;
+    ul{
+      li{
+        float: left;
+        border: 1px solid @primary-color;
+        margin-right: 10px;
+        a{
+          display: block;
+          font-size: 18px;
+          height: 35px;
+          padding: 5px 10px 10px;
+          text-align: center;
+          transition: all 0.3s ease-out 0s;
+          width: 35px;
+          i{
+            color: #ffffff;
+            transition: all 0.3s ease-out 0s;
+            &:hover{
+              color: @primary-color;
+            }
+          }
+        }
+      }
+    }
+   }
+  }
+  .footer-two{
+    ul{
+      li{ 
+        padding: 10px 0 0 15px;
+        position: relative;
+        &:first-child{
+          padding-top: 0;
+        }
+        &:before{
+          background: rgb(207, 148, 85) none repeat scroll 0 0;
+          content: "";
+          height: 5px;
+          left: 0px;
+          line-height: 33px;
+          margin: 10px 0 0;
+          position: absolute;
+          width: 5px;
+          transition: all 0.3s ease-out 0s;
+        }
+        a{
+          color: @secondary-color;
+          &:hover{
+            color: @primary-color;          }
+        }
+      }
+    }
+  }
+  .footer-three{
+    ul{
+      li{ 
+        padding: 10px 0 0 0;
+        position: relative;
+        &:first-child{
+          padding: 0;
+        }
+        a{
+          color: @secondary-color;
+          &:hover{
+            color: @primary-color;
+          }
+          i{
+            color: @primary-color;
+            margin: 5px;
+          }
+        }
+      }
+    }
+  }
+  .footer-four{
+    ul{
+      li{
+        float: left; 
+        margin: 3px;      
+        a{
+          display: block;
+          img{
+            width: 80px;
+            transition: all 0.3s ease-out 0s;
+            &:hover{
+              opacity: .5;
+            }
+          }          
+        }
+      }
+    }
+  }
+}
+/*-------------------------------------
+13.1 Footer Bottom Area Styling 
+---------------------------------------*/
+.footer-buttom-area{
+  background: #000000;
+  border-top: 1px solid @secondary-color;
+  padding: 30px 0;
+  position: relative;
+  .footer-buttom{
+    .scrollup{
+      position: absolute;
+      right: 0;
+      top: -45px;
+      a{
+       background: rgb(255, 255, 255) none repeat scroll 0 0;
+        display: block;
+        height: 30px;
+        padding: 3px 0 0 8px;
+        width: 30px;
+        i{
+          color: #000000;
+        }
+      }
+    }
+    p{
+      text-align: center;
+      color: #ffffff;
+      margin: 0;
+    }
+  }
+}
+/*-------------------------------------
+14. Home Two Experience Section Styling
+--------------------------------------*/
+.experince-area{
+  padding: 70px 0 100px;
+  .experince{
+    margin-bottom: 60px;
+    h2{
+      color: rgb(0, 0, 0);
+      font-size: 48px;
+      font-weight: 800;
+      margin: 0;
+      overflow: hidden;
+      position: relative;
+      span{
+        color: @primary-color;
+        font-size: 90px;
+        font-weight: 600;
+        float: left;
+        margin: 0 10px 0 0;
+      }
+      b{
+        color: rgb(0, 0, 0);
+        font-size: 24px;
+        font-weight: normal;
+        margin: 25px 0 0;
+        font-weight: 600;
+      }
+    }
+  }
+  p{
+    font-weight: normal;
+    font-size: 20px;
+    margin: 10px 0;
+    line-height: 30px;
+  }
+  .single-experince-area{
+    transition: all 0.3s ease-out 0s;
+    &:hover{
+    .icon{
+      a{
+        background: #ffffff;
+         border: 10px solid rgb(239, 226, 211);         
+        i{
+          color: #000000;    
+        }
+      }
+    }
+
+    h2{
+      margin: 0;
+      a{
+        color: @primary-color;
+      }
+    }
+    }
+    text-align: center;
+    transition: all 0.3s ease-out 0s;
+    .icon{
+      a{
+        background: rgb(207, 148, 85) none repeat scroll 0 0;
+        border: 10px solid rgb(239, 226, 211);
+        border-radius: 50%;
+        display: block;
+        height: 100px;
+        line-height: 85px;
+        margin: auto;
+        text-align: center;
+        width: 100px;
+      i{
+        
+        color: rgb(255, 255, 255);
+        font-size: 25px;
+        line-height: 0;
+   
+      }
+    }
+    }
+    h2{
+      margin: 0;
+      a{
+        display: block;
+        color: #000000;
+        font-size: 20px;
+        font-weight: 600;
+        margin: 20px 0;
+        transition: all 0.3s ease-out 0s;
+        &:after{
+              background: rgb(207, 148, 85) none repeat scroll 0 0;
+              content: "";
+              display: block;
+              height: 3px;
+              left: 0;
+              margin: 20px auto;
+              right: 0;
+              top: 0;
+              width: 70px;
+        }
+      }
+    }
+    p{
+      font-size: 14px;
+      line-height: 22px;
+      margin: 0;
+    }
+  }
+}
+/*-------------------------------------
+15. Make Appointemnt Section Styling 
+---------------------------------------*/
+.make-appointment-area{  
+    background: url(img/appointment.jpg) no-repeat;
+    background-position: center center;
+    background-size: cover;
+    padding: 100px 0;
+    text-align: center;
+    color: #ffffff;        
+    transition: all 0.3s ease-out 0s;
+    &:hover{
+      opacity: .8;
+      }
+    .make-appointment{
+      h2{
+        font-weight: 600;
+        text-transform: uppercase;
+        margin: 0;
+        font-size: 36px;
+        margin-bottom: 20px;
+      }
+      a{
+        display: inline-block;
+        border:1px solid #ffffff;
+        padding: 15px 20px;
+        text-align: center;
+        text-transform: uppercase;
+        color: @primary-color;        
+        transition: all 0.3s ease-out 0s;
+        font-weight: 600;
+        &:hover{
+            color: #ffffff;
+        }
+      }
+    }
+}
+/*-------------------------------------
+16. Home Three Styling 
+---------------------------------------*/
+  /*-------------------------------------
+  16.1 Header Area Start 
+  ---------------------------------------*/
+.Home-three{
+  .main-header-area {
+  left: 0;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  z-index: 99;
+  }
+  .main-header-area .search-area input {
+  background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+  color: rgb(255, 255, 255);
+  }
+  .service-area{
+    padding: 100px 0 0 0;
+  .practice-area{
+    .single-service{
+      padding: 65px 0px;
+      h2{
+        a{
+          &:after{
+            background: transparent;
+          }
+        }
+      }
+      &:hover{
+        background: @primary-color;
+        i{
+          color: #ffffff;          
+        }        
+      h2{
+        a{
+           color: #ffffff;    
+        }
+      } 
+    }
+      h2{
+        a{
+           color: @primary-color;    
+        }
+      }
+    }
+    .owl-prev{
+      left: -5px;
+      top: 115px;
+    }
+    .owl-next{
+      right: -5px;
+      top: 115px;
+    }
+
+  }
+
+}
+}
+/*-------------------------------------
+16.2 Testimonial Area Start Styling 
+---------------------------------------*/
+.Home-three{
+  .testimonial-area{
+    background: url(img/testimonial-bg.jpg) no-repeat;
+    background-position: center center;
+    background-size: cover;
+    padding: 100px 0;
+    text-align: center;
+    color: #ffffff;        
+    transition: all 0.3s ease-out 0s;
+    h2{
+      color: #ffffff;
+    }
+    .single-testimonial{
+      p{
+        font-size: 20px;
+        font-weight:600;
+        line-height: 30px;
+        &:before{           
+            content: "\f10d";
+            display: block;
+            height: 3px;
+            left: 0;
+            right: 0;
+            top: 0;
+            width: 70px;
+            position: absolute;
+            font-family: FontAwesome;
+            color: @primary-color;
+        } 
+        &:after{           
+            content: "\f10e";
+            display: block;
+            height: 3px;
+            right: 0;
+            top: 0;
+            width: 70px;
+            position: absolute;
+            font-family: FontAwesome;
+            color: @primary-color;
+
+        } 
+      }
+      .picture{
+        margin-top: 30px;
+        a{
+          img{
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+          }
+        }
+        h3{
+          margin:0;
+          a{
+            color: #ffffff;
+            font-size: 18px;
+          }
+        }
+        h4{
+          a{
+            color: #ffffff;
+            font-size: 14px;
+          }
+        }
+      }
+
+    }
+  }
+}
+
+/*-------------------------------------
+17. Home Four Styling 
+---------------------------------------*/
+  /*-----------------------------------
+  17.1 Home Four Header area styling 
+  -------------------------------------*/
+.Home-four{
+  .main-header-area{
+    padding-top: 15px;
+    .logo-area{
+      padding-top: 0;
+    }
+    .get-consultation{     
+     a{
+      transition: all 0.3s ease-out 0s;
+      display: block;
+      background: @primary-color;
+      padding: 10px;
+      font-size: 20px;
+      color: #ffffff;
+      font-size: 14px;
+      text-transform: uppercase;
+      font-weight: 600;
+      font-family: @menu-font;
+      &:hover{
+        background:@secondary-color;
+        color: @primary-color;
+      }
+     } 
+    }
+     .main-menu-area{      
+        padding: 8px 0 0;
+        nav > ul{
+      > li{
+            padding: 0 0 45px 0;
+           }
+         }
+       }
+  .search-area{
+    padding: 15px 0;
+    span{
+      top: 25px;
+    }
+  }
+  }
+  .menu-top-bar{
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 5px;
+    &:after{
+          background: #C4C4C4;
+          bottom: 1px;
+          content: "";
+          height: 1px;
+          left: 0;
+          position: absolute;
+          width: 100%;
+    }
+    .single-menu-top-bar{
+      float: left;
+      width: 50%;
+      a{
+        i{
+          color: @primary-color;
+          font-size: 28px;        
+          transition: all 0.3s ease-out 0s;
+          &:hover{
+            color: @secondary-color;
+          }
+        }
+      }
+      .media-heading{
+        color: #000000;
+        margin: 0;
+      }
+      p{
+        color: @secondary-color;
+        font-size: 12px;
+        margin: 0;
+      }
+    }
+  }
+}
+/*-------------------------------------
+17.2 Lawer Expert Area styling 
+---------------------------------------*/
+.Home-four{
+  .lawyer-expert-area{
+    position: relative;
+    overflow: hidden;
+    padding: 100px 0 50px 0;
+    .lawyer-expert-section-area{
+      .single-lawyer-expert{
+      padding: 50px 0;              
+          a{
+            i{
+              font-size: 28px;
+              color: @primary-color;
+              &:hover{
+                color: @secondary-color;
+              }              
+            }
+          }
+          .media-heading{
+
+            a{
+              font-size: 20px;
+              color: #000000;
+              font-weight: 600;
+              &:hover{
+                color: @primary-color;
+              }
+            }
+          }
+          .lawyer-button{
+            a{
+              text-transform: uppercase;
+              color: #000000;
+              font-family: @menu-font;
+              font-size: 12px;
+              border:1px solid @secondary-color;
+               transition: all 0.3s ease-out 0s;
+               padding: 10px 20px;
+               display: inline-block;
+               font-weight: bold;
+               &:hover{
+                background: @primary-color;
+                color: #ffffff;
+                border: 1px solid @primary-color;
+               }
+            }
+          }
+        }
+      }
+    }
+  }
+/*-------------------------------------
+17.3 Home Four Practices Area Stying 
+---------------------------------------*/
+.home4-practiceing-area{
+  padding: 100px 0;
+  .home4-practiceing-content-area{    
+    h2{
+      a{
+        text-transform: uppercase;
+        font-weight: 600;
+        font-size: 48px;
+        color: #000000;
+        text-decoration: none;
+      }
+    }
+    .practice-tab{
+      li{
+        &.active{
+          a{
+            color: @primary-color;
+          }
+        }
+        a{
+          color: @secondary-color;
+        }
+      }
+    }
+    .practice-content{
+      padding: 35px 0;
+      .active{
+        h2{
+          color: @primary-color;
+          font-family: @body-font;
+          font-size: 24px;
+        }
+      }
+    }
+  }
+  .home4-practiceing-featured-image{
+    img{
+      width: 100%;
+      &:hover{
+        opacity: .9;
+      }
+    }
+  }
+}
+/*-------------------------------------
+18. About Us Page Styling 
+---------------------------------------*/
+ /*------------------------------------
+  18.1 Banner Area Stying 
+  -------------------------------------*/
+  .banner-area{
+    background: url(img/page-bennar.jpg) no-repeat;
+    background-position: center center;
+    background-size: cover;
+    text-align: center;
+    color: #ffffff;
+    padding: 135px 0;
+    .main-bennar{
+      h2{
+        font-size: 36px;
+        font-weight: 600;
+        text-transform: uppercase;
+
+      }
+      .breadcumb{
+
+        ul{
+          li{
+            display: inline-block;
+            color: @primary-color;
+            position: relative;
+            a{
+              display: block;
+              padding: 10px 40px;
+              text-decoration: none;
+              color: #ffffff;
+              &:after{
+              background: #ffffff;
+              content: "";
+              height: 2px;
+              margin: auto;
+              position: absolute;
+              right: 10px;
+              top: 21px;
+              width: 13px;
+
+              }
+              &:hover{
+                color: @secondary-color;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+/*-------------------------------------
+18.2 About Page Lawyer Section Area Stying 
+---------------------------------------*/
+.about-page-section{
+  padding: 100px 0 0;
+  background: #f9f9f9;
+  .about-page-content{
+    padding: 100px 0;
+    h2{
+      color: #000000;
+      font-size: 48px;
+      margin: 0;
+      font-weight: 600;
+      span{
+        color: @primary-color;
+      }
+    }
+    h4{
+      color: #000000;
+      margin: 20px 0;
+      font-family: @body-font;
+      font-weight: 600;      
+    }
+    .contact-us-button{
+      display: inline-block;
+      position: relative;
+      a{
+      background: rgb(0, 0, 0) none repeat scroll 0 0;
+      color: rgb(255, 255, 255);
+      display: inline-block;
+      font-size: 18px;
+      font-weight: 600;
+      margin-top: 30px;
+      padding: 15px 40px;
+      text-decoration: none;
+      transition: all 0.3s ease 0s;
+      &:after{
+      color: rgb(255, 255, 255);
+      content: "";
+      display: block;
+      font-family: FontAwesome;
+      font-size: 20px;
+      position: absolute;
+      right: 15px;
+      top: 48px;
+      }
+      &:hover{
+        background: @primary-color;
+      }
+      }
+    }
+  }
+  .about-page-featured-image{
+    img{
+      transition: all 0.3s ease 0s;
+      &:hover{
+        opacity: .9;
+      }
+    }
+  }
+}
+/*-------------------------------------
+19. Awards Page Area Stying 
+---------------------------------------*/
+.our-wining-awards-area{
+  padding: 100px 0;
+  .wining-section-area{
+    text-align: center;
+    h2{
+      font-weight: 600;
+      text-transform: uppercase;
+      color: #000000;
+      font-size: 48px;
+      margin: 0;
+    }
+    p{
+      padding:20px 150px;
+    }
+  }
+  .single-wining-section{
+    margin: 30px 0 0 0;
+    text-align: center;
+    padding: 85px 20px;
+    border: 1px solid @secondary-color;
+    transition: all 0.3s ease 0s;
+    .image{
+      img{
+        transition: all 0.3s ease 0s;
+       &:hover{
+         opacity: .9; 
+       }        
+      }
+    }
+    &:hover{
+          box-shadow: 0px 0px 3px 2px rgba(119, 119, 119, 0.5);
+          -moz-box-shadow: 0px 0px 3px 2px rgba(119, 119, 119, 0.5);
+          -webkit-box-shadow: 0px 0px 3px 2px rgba(119, 119, 119, 0.5);
+   
+    img{
+       opacity: .8; 
+    }        
+    }
+    p{
+      margin: 25px 0 10px;
+    }
+    }
+
+}
+.Home-three.awards.about-us .main-header-area{
+  position: inherit;
+}
+/*-------------------------------------
+20.Practice Area Stying 
+---------------------------------------*/
+.practice-area{
+  background: #f9f9f9;
+  padding: 100px 0;
+  .practice-area-heading-section{
+    text-align: center;
+    h2{
+      color: rgb(0, 0, 0);
+      font-size: 48px;
+      font-weight: 600;
+      margin: 0;
+      text-transform: uppercase;
+    }
+    p{
+      padding: 20px 150px;
+    }
+  }
+  .practice-service-section-area{
+    .single-practice-service-content-area{
+      background: #ffffff;
+      padding: 60px 50px;
+      position: relative;
+      overflow: hidden;
+      margin: 30px 0 0 0;
+        a{
+          i{
+            color: @primary-color;
+            font-size: 50px;
+            margin: 15px;
+        }
+
+      }
+      .content{
+          border-left: 1px solid #cfcfcf;
+          padding-left: 25px !important;
+          position: relative;
+          p{
+            padding-right: 10em;
+          }
+          h4{
+            a{
+              color: #000000;
+              font-size: 20px;
+              text-decoration: none;
+              transition: all 0.3s ease 0s;
+              font-weight: 700;
+              &:hover{
+                color: @primary-color;
+              }
+            }
+          }
+          .practice-service-read-more{
+            position: absolute;
+            top: 35px;
+            right: 0;
+              a{
+                display: block;
+                padding: 10px 15px;
+                border: 1px solid #cfcfcf;
+                text-transform: uppercase;
+                font-family: @menu-font;
+                font-weight: 600;
+                color: @primary-color;
+                &:hover{
+                  background: #000000;
+                  color: #ffffff;
+                  transition: all 0.3s ease 0s;
+                  border: 1px solid #000000;
+                }
+              }            
+            
+          }
+      }
+    }
+  }
+}
+/*-------------------------------------
+21. Blog Page Stying 
+---------------------------------------*/
+.blog{
+  .section-title-area{
+    h2{
+      font-size: 48px;
+      &:after{
+        display: none;
+      }
+    }
+    p{
+      padding:10px 200px;
+    }
+  }
+  .pagination{
+    position: relative;
+    overflow: hidden;
+    ul{
+      li{border: 1px solid @primary-color;
+        display: inline-block;
+        margin: 5px;
+        &.active{
+          border: 1px solid @primary-color;
+         a{
+           background: @primary-color;
+
+         }
+        }
+        a{
+          color: rgb(0, 0, 0);
+          display: block;
+          font-size: 16px;
+          padding: 10px 15px;
+          &:hover{                   
+           background: @primary-color;         
+          }
+        }
+      }
+    }
+  }
+}
+/*-------------------------------------
+22.Single Blog Page Styling
+-------------------------------------*/
+.total-blog-area{
+  padding: 100px 0;
+  .single-blog-post{
+    margin-bottom: 20px;
+    padding: 0px 0;
+    .blog-image {
+        position: relative;
+        img {
+          transition: all 0.3s ease 0s;
+          &:hover{
+            opacity: .9;
+          }
+        }
+    }
+    h2 {
+    margin: 25px 0 0;
+    padding: 0;
+    a{
+      color: #000000;
+      transition: all 0.3s ease 0s;
+      font-size: 24px;
+      &:hover{
+        color: @primary-color;
+      }
+
+    &:after {
+    background: @primary-color;
+    content: "";
+    display: block;
+    height: 3px;
+    left: 0;
+    margin: 5px 0 0;
+    top: 0;
+    width: 100px;
+    }
+  }
+  }
+  h4{
+    color: #000000;
+    margin: 10px 0;
+  }
+  p{
+    margin-top: 20px;
+  }
+  .post-informations{
+    overflow: hidden;
+    margin: 10px 0 10px;
+    ul{
+      li{
+        display: block;
+        float: left;
+        margin-right: 5px;
+        padding: 5px 20px 0 0;
+        i{
+          color: @primary-color;
+          transition: all 0.3s ease 0s;
+          margin-right: 10px;
+          &:hover{
+            color: @secondary-color;
+          }
+        }      
+      }
+    }
+  }
+  }
+  .blog-comments-area{
+  h2{
+      color: #000000;
+      font-size: 18px;
+      font-weight: 600;
+      text-transform: uppercase;
+      transition: all 0.3s ease 0s;
+    &:after {
+    background: @primary-color;
+    content: "";
+    display: block;
+    height: 3px;
+    left: 0;
+    margin: 5px 0 0;
+    top: 0;
+    width: 80px;
+    }
+  }
+  .single-comments {
+  background: rgb(239, 239, 239) none repeat scroll 0 0;
+  padding: 15px;
+  h4{
+    a{
+      color:  #000000;
+      transition: all 0.3s ease 0s;
+      &:hover{
+        color: @primary-color;
+      }
+    }
+  }
+  .pull-left {
+    padding-right: 10px;
+  }
+}
+.margin-left {
+  margin-left: 30px;
+  margin-top: 20px;
+}
+}
+.blog-sidebar-area{
+  .single-sidebar {
+    margin-bottom: 30px;
+    h2 {
+    color: #000000;
+    font-family: "Raleway",sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    }
+    .sidebar-search {
+    overflow: hidden;
+    position: relative;
+    input{
+      border: 1px solid @secondary-color;
+      color: #000000;
+      padding: 10px;
+      width: 100%;
+    }
+    button {
+    background: @secondary-color;
+    border: medium none;
+    color: #ffffff;
+    padding: 10px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 999;
+    }
+    }
+    .sidebar-category{
+       ul {
+          li {
+          border-bottom: 1px dotted @primary-color;
+          position: relative;         
+          a{
+          color: @secondary-color;
+          display: block;
+          padding: 5px;
+          text-decoration: none;
+          transition: all 0.3s ease 0s;
+          &:hover{
+            color: @primary-color;
+          }
+          &:before{
+            color: @primary-color;
+            content: "\f105";
+            font-family: FontAwesome;
+            height: 15px;
+            left: -5px;
+            position: absolute;
+            top: 5px;
+            width: 15px;
+          }
+
+          }
+          }
+       }
+    }
+    .sidebar-recent-post{
+      .pull-left{
+        img{ transition: all 0.3s ease 0s;
+          &:hover{
+            opacity: .9;
+          }
+        }
+      }
+      .media-body{
+      h4{
+        a{
+          color:  #000000;
+          transition: all 0.3s ease 0s;
+          display: block;
+          margin-top: 0px;
+          font-weight: 600;
+          font-size: 20px;
+          &:hover{
+            color: @primary-color;
+          }
+        }
+      }
+      .posted-date{
+        a{
+          color:  #000000;
+          transition: all 0.3s ease 0s;
+          &:hover{
+            color: @secondary-color;
+          }
+        }
+      }
+      }
+    }
+    .popular-tags{
+      ul{
+        li{
+          display: inline-block;
+          border: 1px solid @primary-color;
+          margin: 2px;
+          a{
+            padding: 5px 10px;
+            text-decoration: none;
+            display: block;
+            color: #000000;
+          &:hover{
+            color: @primary-color;
+          }
+          }
+        }
+      }
+    }
+  }
+}
+
+}
+/*-------------------------------------
+23.Conatct Page Styling 
+---------------------------------------*/
+.contact-page-area{
+  padding: 100px 0;
+  .contact-form-area{
+    h2{
+      font-size: 30px;
+      font-weight: 600;
+      margin: 0;
+      color: #000000;
+      text-transform: uppercase;
+      margin-left: 15px;
+      margin-bottom: 20px;
+    }
+  form{
+    label{
+      font-size: 14px;
+      font-family: @body-font;
+      font-weight: normal;
+    }
+    input{
+    border-radius: 0px;
+    height: 36px;
+    } 
+    button{
+          &.submit-buttom{
+    background: @primary-color;
+    padding:10px 15px;
+    color: #ffffff;
+    border: none;
+    font-family: @body-font;
+    font-weight: bold;
+    transition: all 0.3s ease 0s;
+    &:hover{
+      background: @secondary-color;
+    }
+    } 
+    } 
+  }
+  }
+  .office-address{
+    h2{
+      font-size: 30px;
+      font-weight: 600;
+      margin: 0;
+      color: #000000;
+      text-transform: uppercase;
+      margin-bottom: 25px;
+    }
+    ul{
+      li{
+        margin-bottom:10px;
+        overflow: hidden;
+        clear: both;
+
+        a{
+          color: #000000;
+          font-size: 16px;
+          transition: all 0.3s ease 0s;
+
+          &:hover{
+            color: @primary-color;
+          }
+            i{
+            background: @primary-color;
+            font-size: 15px;
+            color: #ffffff;
+            padding:10px;
+            width: 35px;
+            height: 35px;
+            text-align: center;
+            margin-right: 20px;
+            transition: all 0.3s ease 0s;
+            float: left;
+            &:hover{
+              color: #000000;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+/*-------------------------------------
+24.404 Page Styling 
+---------------------------------------*/
+.error-page-area{
+    padding-top: 100px;
+    .error-page{ 
+    text-align: center; 
+    background: url(img/404.png) no-repeat;
+    background-position: center center;
+    background-size: cover;
+    padding:100px;
+    h1{
+      color: rgb(255, 255, 255);
+      font-size: 100px;
+      font-weight: 900;
+      margin: 0;
+    }
+    p{      
+      color: rgb(255, 255, 255);
+      font-size: 25px;
+      font-weight: 900;
+      margin: 10px;
+
+    }
+
+    }
+    .error-page-content{
+      p{
+        color: rgb(0, 0, 0);
+        display: block;
+        padding: 48px 330px;
+        text-align: center;
+      }
+      .go-home{
+        text-align: center;
+        a{
+          display: inline-block;
+          text-align: center;
+          text-transform: uppercase;
+          text-decoration: none;
+          padding: 10px 20px;
+          background: @primary-color;
+            transition: all 0.3s ease 0s;
+            color: #ffffff;
+          &:hover{
+            background: @secondary-color;
+            color:#ffffff;
+          }
+        }
+      }
+    }
+}
+/*-------------------------------------
+Mobile Menu
+-------------------------------------*/
+.mobile-menu-area{
+  display: none;
+}

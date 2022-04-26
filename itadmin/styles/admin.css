@@ -1,0 +1,216 @@
+@charset "utf-8";
+/* CSS Document */
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
+@import url('https://fonts.googleapis.com/css?family=Anton');
+body {
+	font-family:Verdana;
+	font-size: 12px;
+	color: #111111; background-color:#EEECE5;
+}
+a {
+	font-family: Verdana, Arial, Helvetica, sans-serif;	color:#005C74;	text-decoration: none;
+}
+a:hover{
+	font-family: Verdana, Arial, Helvetica, sans-serif;	color:#B2C0C4;	text-decoration: underline;
+}
+.header-text{
+font-size: 30px;
+    font-weight: 500;
+    color: #3b3c3b;
+    text-align: center;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: 'Anton', sans-serif;
+    margin: 21px 0 0 0;
+}
+
+.newslinkk13{font-family: Verdana, Arial, Helvetica, sans-serif;color:#ffffff;	text-decoration: none;}
+
+.signout{
+color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    text-align: right;
+    background: #cf242c;
+    padding: 5px;
+	}
+.bodydiv {
+	margin: 0 10px;
+	background:#FFFFFF;
+}
+table, .bodytable{
+	border-collapse:collapse;
+}
+th{
+	background: #D8D8DD;
+	text-align: center;
+}
+th.sort {
+	background-image: url(../images/sort.gif);
+	background-repeat: no-repeat;
+	background-position: center right;
+	cursor: pointer;
+}
+.sub-heading{
+font-size: 20px;color: #fff;text-align: left;text-transform: capitalize;font-family: 'Montserrat', sans-serif;
+font-weight:normal;
+}
+.sub-sub-heading{
+font-size: 12px;color: #fff;text-align: left;text-transform: capitalize;font-family: 'Montserrat', sans-serif;
+font-weight:normal;
+}
+.fleft{float:left;}
+.fright{float:right;}
+.clear{clear:both;}
+.maincontent {
+	min-height: 500px;
+}
+.bodycontent {padding: 1px 5px;min-width:450px;}
+.style2 {
+	padding: 6px 5px;	background: #F4F4F4;
+	color: #115C90;	font-size: 11px;	font-weight: bold;
+	text-align: left;border-bottom: solid 1px #888888;
+}
+.submenu{
+	margin-bottom: 0.5em; 
+	color:#FFFFCC;
+}
+.submenu div {
+	padding:5px 5px 5px 19px;
+	background:#ffffff url(../images/bullet.png) 2% no-repeat;
+	text-align: left;
+	border-bottom: solid 1px #888888;
+	
+}
+.submenu div:hover, .submenu div.active{
+	background-color:#009220; 
+}
+.submenu div a:link, .submenu div a:visited{
+	color: #115C90;	font-size: 12px;
+}
+.submenu div:hover a, .submenu div.active a{
+	text-decoration: none;color:#FFFFFF;
+}
+
+#footer {
+    text-align: center;
+    padding: 8px 10px;
+    color: #ffffff;
+    background:#01911c;
+}
+.content_header {
+	height:25px;	line-height: 25px;
+	background: #F4F4F4;	border-bottom: solid 1px #888888;
+	padding: 0 5px;
+}
+.content_header .heading{
+	font-size: 1.1em;	font-weight: bold;	color: #000000; font-size:11px;
+}
+.content_header .heading a{
+	font-size: 1.0em;	font-weight: bold;	color: #016782; font-size:11px;
+}
+.loginbtn {
+	background-image: url(images/loginimg.gif);
+	background-repeat: no-repeat;
+	background-position: left top;
+	margin: 0px;
+	padding: 0px;
+	height: 35px;
+	width: 80px;
+	border-top-width: 0px;
+	border-right-width: 0px;
+	border-bottom-width: 0px;
+	border-left-width: 0px;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+	cursor:pointer;
+}
+.correct {
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	background: #00AA00;border: solid 2px #CC6C6C;
+	color: #000;font-size: 12px;	font-weight: normal;
+	text-align: center;
+	padding:8px;
+	-moz-box-shadow:2px 2px 2px #bbb;
+	-webkit-box-shadow:2px 2px 2px #bbb;
+	box-shadow:2px 2px 2px #bbb;	
+	-webkit-border-radius:7px;
+	-moz-border-radius:7px;
+	border-radius:7px;
+	border:2px solid #bbb;
+	width:90%; left:5%; top:1px; position:absolute;	
+}
+.error {
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	background: #CC0000 ;border: solid 2px #CC6C6C;
+	color: #FFF;font-size: 12px;font-weight: normal; font-weight:bold;
+	text-align: center;
+	padding:8px;
+	-moz-box-shadow:2px 2px 2px #bbb;
+	-webkit-box-shadow:2px 2px 2px #bbb;
+	box-shadow:2px 2px 2px #bbb;	
+	-webkit-border-radius:7px;
+	-moz-border-radius:7px;
+	border-radius:7px;
+	border:2px solid #bbb;
+	width:90%; left:5%; top:6%; position:absolute;	
+}
+.validation_error {
+	color: #C60000; text-align:center;
+	font-size: 10px;	font-weight: bold;
+}
+a.add {background:url(../images/addnew.gif) left top no-repeat;color:#0D3244;font-size:12px;padding:1px 1px 1px 20px;}
+a.link{color:#0D3244;font-size:12px;}
+.button, a.button{
+	background-image: url(../images/button_bg.png);
+	background-repeat: repeat-x;
+	background-position: top;
+	height: 27px;padding: 0 18px;
+	border: solid 1px #315c9b;-webkit-border-radius:3px;	-moz-border-radius:3px;	border-radius:3px;
+	-moz-box-shadow: 0 0 1px 1px #315c9b;	-webkit-box-shadow: 0 0 1px 1px #315c9b;	box-shadow: 0 0 1px 1px #315c9b;
+	font-weight: bold;font-size: 12px;line-height:27px;
+}
+a.button {
+	font-weight: bold;font-size: 12px;line-height:30px; color:#000000;text-decoration: none;
+	padding: 7px 18px;height: 27px;
+}
+.button:hover, a.button:hover{
+	background-position: bottom;
+}
+input, select {
+	-webkit-border-radius: 4px;	-moz-border-radius: 4px;	border-radius: 4px;
+	border:1px solid #AAAAAA;padding: 3px;
+}
+select.sel1 {-webkit-border-radius: 1px;	-moz-border-radius: 1px;	border-radius: 1px;
+	border:1px solid #AAAAAA;padding: 0px;}
+table.datagrid{
+	border: solid 1px #DDDDDD;border-collapse: collapse;
+}
+table.datagrid th{
+	background: #F1FBFD;
+}
+table.datagrid th.sort {
+	background-image: url(../images/sort.gif);
+	background-repeat: no-repeat;
+	background-position: 99% center;
+	cursor: pointer;padding-right: 10px;
+}
+table.datagrid tr:hover{
+	background: #F8FCFD;
+}
+
+table.datagrid td{
+	color:#000000; padding-left: 3px; font-size: 12px;
+}
+table.datagrid td a:link, table.datagrid td a:visited {
+	color:#000000; text-decoration: none;
+}
+.box01 {padding:7px;border: solid 1px #CCCCCC;width:450px;margin:20px auto;}
+.label {font-size: 11px; font-weight: bold;}
+.hint {font-size: 11px; font-weight: normal; font-style:italic;}
+.readonly {background:#FFFFCC;}
+.headerlinkbox{ color:#1e1f1d; margin-top:5px; text-align:left;}
+.sort_botton{ color:#FFFFFF; font-weight:bold; background-color:#990000; font-size:11px;}

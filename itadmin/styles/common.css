@@ -1,0 +1,28 @@
+@charset "utf-8";
+/* CSS Document */
+.block {
+	display: block;
+}
+.none {
+	display: none;
+}
+.clear {
+	clear: both;
+}
+.suc {
+	font-size :12px;
+	font-weight: bold;
+	color: #090;
+}
+.flleft {
+	float: left;
+}
+.flright {
+	float: right;
+}
+.center {
+	text-align: center;
+}
+.label {font-size:11px; font-weight: bold;}
+.tarea01 {width:550px;height:100px;}
+.tbox01 {width:550px;}

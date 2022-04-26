@@ -1,0 +1,15 @@
+@charset "utf-8";
+/* CSS Document */
+
+.datepicker { border-collapse: collapse; border: 1px solid #61ABED; position: absolute;}
+.datepicker tr.controls th { height: 22px;}
+.datepicker select { font-size: 11px;color:#4A667E; }
+.datepicker tr.days th { height: 18px; }
+.datepicker tfoot td { height: 18px; text-align: center; text-transform: capitalize; }
+.datepicker th, .datepicker tfoot td { background: #DAE8F5; font: 11px/18px Verdana, Arial, Helvetica, sans-serif; font-weight:bold; color:#4A667E;}
+.datepicker th span, .datepicker tfoot td span { font-weight: bold; }
+
+.datepicker tbody td { width: 24px; height: 24px; border: 1px solid #61ABED; font: 11px/22px Arial, Helvetica, sans-serif; text-align: center; background: #fff; }
+.datepicker tbody td.date { cursor: pointer; }
+.datepicker tbody td.date.over { background-color: #90C6F5; }
+.datepicker tbody td.date.chosen { font-weight: bold; background-color: #ccffcc; }
